@@ -1,0 +1,33 @@
+/**
+ * iPhoneslide styles
+ * by Michael Mokrysz
+ */
+
+/* -------------------------------------------------------------------------- */
+
+.islide {
+	width: 386px;
+	height: 122px;
+	list-style: none;
+	overflow: hidden;
+	background: red;
+	position: relative;
+}
+.islide.three-up {
+	width: 380px;
+}
+.islide li {
+	float: left;
+	width: 120px;
+	height: 120px;
+	margin-right: 6px;
+	position: relative;
+}
+.islide li a {
+	
+}
+.islide li a img {
+	border: 1px solid #cccccc;
+}
+
+/* -------------------------------------------------------------------------- */
