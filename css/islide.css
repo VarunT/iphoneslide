@@ -8,25 +8,30 @@
 .islide {
 	width: 386px;
 	height: 122px;
-	list-style: none;
 	overflow: hidden;
-	background: red;
 	position: relative;
+	background: red;
 }
 .islide.three-up {
 	width: 380px;
 }
-.islide li {
+.islide ul {
+	top: 0;
+	left: 0;
+	width: 9999px;
+	list-style: none;
+	position: absolute;
+}
+.islide ul li {
 	float: left;
 	width: 120px;
 	height: 120px;
 	margin-right: 6px;
-	position: relative;
 }
-.islide li a {
+.islide ul li a {
 	
 }
-.islide li a img {
+.islide ul li a img {
 	border: 1px solid #cccccc;
 }
 

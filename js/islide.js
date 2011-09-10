@@ -3,18 +3,22 @@ $(document).ready(function () {
 		e.preventDefault();
 	}, false);
 	
-	// Update items to absolute positioning
-	$(".islide li").each(function () {
-		var $this = $(this);
-		$this.css({
-			'position': 'absolute',
-			'top': 0,
-			'left': parseInt($this.position().top) + "px"
-		});
+	var slidelast = 0;
+	
+	$(".islide").bind('touchstart', function (e) {
+		slidelast = e.originalEvent.touches[0].pageX;
 	});
 	
 	$(".islide").bind('touchmove', function (e) {
 		//alert(e.originalEvent.touches[0].pageX);
-		$('li', this).css('left', '-=3px');
+		movement = (parseInt(e.originalEvent.touches[0].pageX) - parseInt(slidelast));
+		if (movement < 0) {
+			movement = "-=" + String(Math.abs(movement));
+		} else {
+			movement = "+=" + String(Math.abs(movement));
+		}
+		$('ul', this).css('left', movement);
+		
+		slidelast = e.originalEvent.touches[0].pageX;
 	});
 });
