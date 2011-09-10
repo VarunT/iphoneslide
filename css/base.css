@@ -1,0 +1,50 @@
+/**
+ * Base CSS file
+ * by Michael Mokrysz
+ */
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Pagewide styles
+ */
+
+body
+{
+	color: #;
+	background: #;
+	font: 62.5%/1.3 Helvetica, Arial, sans-serif;
+}
+	
+	a
+	{
+		color: #;
+	}
+		
+		a:link,
+		a:visited
+		{
+			text-decoration: underline;
+		}
+		
+		a:hover,
+		a:active
+		{
+			text-decoration: none;
+		}
+	
+	.wrapper
+	{
+		width: 960px;
+		margin: 0 auto;
+	}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Main page areas
+ */
+
+
+
+/* -------------------------------------------------------------------------- */

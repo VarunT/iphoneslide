@@ -1,0 +1,113 @@
+/**
+ * Reset CSS file
+ * by Michael Mokrysz
+ */
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Mostly HTML5Doctor Reset
+ * http://html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;font-weight:normal;} body{line-height:1;background:#ffffff;} article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;} ul{list-style:none;} blockquote,q{quotes:none;} blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;} a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;} ins{background-color:#ff9;color:#000;text-decoration:none;} mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold;} del{text-decoration:line-through;} abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help;} table{border-collapse:collapse;border-spacing:0;} hr{display:block;height:1px;border:0;border-top:1px solid #000000;margin:1em 0;padding:0;} input, select{vertical-align:middle;}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Fixes & utility classes
+ */
+
+a:hover,
+a:active
+{
+	outline: none;
+}
+
+a img
+{
+	border: none;
+}
+
+button
+{
+	width: auto;
+	overflow: visible;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner
+{
+	border: 0;
+	padding: 0;
+}
+
+.uppercase
+{
+	text-transform: uppercase;
+}
+
+.txthide
+{
+	height: 0;
+	display: block;
+	text-indent: -9999px;
+}
+
+.hide
+{
+	display: none;
+}
+
+.acchide
+{
+	position: absolute !important;    
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.clearr
+{
+	clear: right;
+}
+
+.clearl
+{
+	clear: left;
+}
+
+.cfix
+{
+	zoom: 1;
+}
+	
+	.cfix:before,
+	.cfix:after
+	{
+		content: "\0020";
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+	
+	.cfix:after
+	{
+		clear: both;
+	}
+
+/* -------------------------------------------------------------------------- */
